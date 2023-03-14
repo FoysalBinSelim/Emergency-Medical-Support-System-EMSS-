@@ -1,0 +1,33 @@
+<div class="main-panel">
+        <div class="content-wrapper">
+        <h3>Add Hospital</h3>
+        <form action="{{ route('storehospital') }}" method="post" enctype="multipart/form-data">
+        @csrf
+  <div class="form-group">
+    <label for="exampleInputEmail1">Hospital Name</label>
+    <input type="text" class="form-control" name="hospital_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hospital Location</label>
+    <input type="text" class="form-control" name="hospital_location" id="exampleInputPassword1" placeholder="departments">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hospital Departments</label>
+    <input type="text" class="form-control" name="hospital_departments" id="exampleInputPassword1" placeholder="departments">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hospital Contact</label>
+    <input type="text" class="form-control" name="hospital_contact" id="exampleInputPassword1" placeholder="departments">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hospital ICU</label>
+    <input type="text" class="form-control" name="hospital_icu" id="exampleInputPassword1" placeholder="departments">
+  </div>
+  
+ <div class="form-group">
+   <label for="hospital_image">Hospital Image</label>
+    <input type="file" class="form-control" name="hospital_image" id="exampleInputPassword1" placeholder="departments">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
